@@ -31,20 +31,16 @@ const body = document.querySelector('body');
        body.appendChild(section);
 
 
-  /*       <section class="section-offer">
-        <div class="container">
-            <h1>Power in Purity</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse deserunt doloremque deleniti, rerum ipsum dolor omnis, placeat quibusdam saepe nam vel? Magni expedita voluptatem atque enim quidem accusamus suscipit ipsum inventore velit omnis quasi, totam laboriosam cumque, ut natus qui. Vero deleniti dolorem magnam adipisci, dolore quod suscipit neque illum!</p>
-            <button class="btn order">Order Now</button>
-            <button class="btn-close">Close</button>
-        </div>
-    </section>  */
  })
 });
 
 
 //TO CLOSE MODAL
- modalClose.addEventListener('click', ()=>{
-    bookSection.style.display='block';
-    modalSection.style.display = 'none';
-}) 
+body.addEventListener('click', (e)=>{
+    if(e.target.className == 'btn-close'){
+        bookSection.style.display='block';
+    }
+    
+})
+
+

@@ -87,6 +87,11 @@ body{
 
 }
 h1{
-    line-height: 7rem;
-    /* text-align: center; */
+    line-height: 7rem'
+}
+
+@media (max-width:700px){
+    body{
+        padding: 0 3rem;
+    }
 }
